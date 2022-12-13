@@ -1,0 +1,141 @@
+// .subscribe {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: baseline;
+//     margin-left: 70px;
+// }
+
+// .subscribe__form {
+//     display: flex;
+//     align-items: center;
+// }
+@media screen and (min-width: 768px) {
+    .subscribe {
+        display: flex;
+        justify-self: center;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .subscribe {
+        align-self: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .subscribe__form {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.subscribe__label {
+    // display: inline-block;
+    // margin-bottom: 20px;
+    // text-align: start;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $third-color;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1199px) {
+    .subscribe__label {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .subscribe__label {
+        text-align: start;
+        align-items: baseline;
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-left: 94px;
+    }
+}
+
+.subscribe__input {
+    width: 358px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-right: 12px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+    color: $third-color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+
+&:focus-visible,
+&:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+    transition: border-color 250ms $cubic;
+    border-color: $border-color;
+}
+}
+@media screen and (max-width: 768px) {
+    .subscribe__input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe__input {
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .subscribe__input {
+        align-items: center;
+        margin-bottom: 0px;
+        margin-right: 12px;
+        margin-left: 94px;
+    }
+}
+
+.subscribe__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    background-color: $accent-color;
+    color: $third-color;
+   
+}
+@media screen and (max-width: 1199px) {
+    .subscribe__button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .subscribe__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.subscribe__icon {
+    display: inline-block;
+    fill: $third-color;
+    margin-left: 10px;
+}

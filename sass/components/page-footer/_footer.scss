@@ -1,0 +1,24 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+}
+
+// .footer__container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: baseline;
+// }
+
+@media screen and (min-width: 768px) {
+    .footer__container {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer__conteiner {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}

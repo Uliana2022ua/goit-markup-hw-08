@@ -1,0 +1,105 @@
+.description {
+    padding-bottom: 0px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .description__list {
+        margin-bottom: 60px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .description__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .description__list {
+        flex-wrap: nowrap;
+        margin-bottom: 0;
+    }
+}
+
+// .description__item {
+//     flex-basis: calc((100% - 90px) / 4);
+// }
+
+@media screen and (max-width: 767px) {
+    .description__item {
+        flex-basis: 450px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .description__item {
+        flex-basis: 354px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .description__item {
+        flex-basis: calc((100% - 90px) / 4);
+        margin-bottom: 0;
+    }
+}
+
+
+.description__title {
+    color: $main-color;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+    .description__title {
+        text-align: center;
+    }
+}
+
+.description__icon {
+    // width: 270px;
+    // height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+}
+@media screen and (max-width: 767px) {
+    .description__icon {
+        max-width: 450px;
+        max-height: 120px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .description__icon {
+        width: 354px;
+        height: 120px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .description__icon {
+        width: 270px;
+        height: 120px;
+    }
+}
+
+.description__task {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $second-color;
+}

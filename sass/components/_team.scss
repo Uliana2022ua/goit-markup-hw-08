@@ -1,0 +1,118 @@
+.team {
+    background: #f5f4fa;
+}
+//  .team__list {
+//     display: flex;
+//     justify-content: center;
+//     gap: 30px;
+//     margin: 0;
+//    padding: 0;
+// }
+
+@media screen and (max-width: 767px) {
+    .team__list {
+        display: block;
+    }
+}
+@media screen and (min-width: 768px) {
+    .team__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .team__list {
+        flex-wrap: nowrap;
+    }
+}
+
+.team__title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: $main-color;
+}
+
+.team__name {
+    color: $main-color;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.team__item {
+    background-color: $third-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+@media screen and (max-width: 767px) {
+    .team__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.team__list .team__social-item:last-child {
+    margin-right: 0;
+}
+
+.team__social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: #afb1b8;
+    &:hover,
+    &:focus {
+            background-color: #188ce8;
+            border-radius: 50%;
+            fill: $third-color;
+        }
+
+}
+
+
+.team__content {
+    padding: 30px 15px;
+}
+
+.team__social-list {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.team__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    fill: #afb1b8;
+}
+
+.team__container .team__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.team__position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $second-color;
+}
