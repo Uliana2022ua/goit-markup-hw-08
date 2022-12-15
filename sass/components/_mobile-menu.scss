@@ -22,12 +22,12 @@
 
 .mobile-close:hover,
 .mobile-close:focus {
-    fill: #2196f3;
+    fill: $accent-color;
 }
 
 .mobile-menu:hover,
 .mobile-menu:focus {
-    fill: #2196f3;
+    fill: $accent-color;
 }
 
 .js-close-menu .mobile-close {
@@ -58,8 +58,20 @@
     transform: translateY(0);
 }
 
-.mobile-navigation__link--current {
-    color: #2196f3;
+.mobile-navigation__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #212121;
+    margin-bottom: 35px;
+}
+.mobile-navigation__link--active {
+    color: $accent-color;
+}
+.mobile-navigation__item {
+margin-bottom: 35px;
 }
 
 .mobile-social__link {
@@ -68,7 +80,7 @@
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2196f3;
+    color: $accent-color;
 }
 
 .mobile-social__list {
@@ -83,14 +95,7 @@
     padding-right: 10px;
 }
 
-.mobile-navigation__item {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color: #000;
-    margin-bottom: 35px;
-}
+
 
 .mobile-contact__link {
     display: block;

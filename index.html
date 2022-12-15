@@ -70,13 +70,13 @@
         </button>
         <ul class="mobile-navigation__list list">
           <li class="mobile-navigation__item">
-            <a href="./index.html" class="navigation__link mobile-navigation__link--current">Студія</a>
+            <a href="./index.html" class="mobile-navigation__link mobile-navigation__link--active">Студія</a>
           </li>
           <li class="mobile-navigation__item">
-            <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
+            <a href="./portfolio.html" class="mobile-navigation__link">Портфоліо</a>
           </li>
           <li class="mobile-navigation__item">
-            <a href="./contacts" class="navigation__link">Контакти</a>
+            <a href="./contacts" class="mobile-navigation__link">Контакти</a>
           </li>
         </ul>
         <div class="mobile-menu-box">
@@ -184,19 +184,22 @@
         <h2 class="section-title developments__title">Чим ми займаємося</h2>
         <ul class="list developments__list">
           <li class="developments__item">
-            <img src="./img/about2.jpg" width="370" alt="Десктопні версії" />
+            <img srcset="./img/_box1@1x.jpg 1x, ./img/_box1@2x.jpg 2x" src="./img/_box1@1x.jpg" alt="working on PC"
+              width="370" />
             <div class="developments__overlay">
               <p class="developments__text">Десктопні додатки</p>
             </div>
           </li>
           <li class="developments__item">
-            <img src="./img/about1.jpg" width="370" alt="Mобільні аплікації" />
+            <img srcset="./img/_box2@1x.jpg 1x, ./img/_box2@2x.jpg 2x" src="./img/_box2@1x.jpg"
+              alt="working on smartphone" width="370" />
             <div class="developments__overlay">
               <p class="developments__text">мобільні додатки</p>
             </div>
           </li>
           <li class="developments__item">
-            <img src="./img/about.jpg" width="370" alt="Дизайн" />
+            <img srcset="./img/_box3@1x.jpg 1x, ./img/_box3@2x.jpg 2x" src="./img/_box3@1x.jpg" alt="working on tablet"
+              width="370" />
             <div class="developments__overlay">
               <p class="developments__text">Дизайнерські рішення</p>
             </div>
@@ -209,10 +212,26 @@
     <section class="team section">
       <div class="team-photos container">
         <h2 class="section-title team__title">Наша команда</h2>
-        <ul class="team__list">
+        <ul class="list team__list">
           <li class="team__item">
+            <picture>
+              <source srcset="
+                                ../img/team1_lap@1x.jpg 270w,
+                                ../img/team1_lap@2x.jpg 540w," media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 270px" />
+              <source srcset="
+                                    ../img/team1_tab@1x.jpg 354w,
+                                    ../img/team1_tab@2x.jpg 708w
+                                  " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
 
-            <img src="./img/photo1.jpg" width="270" alt="Ігор Дем'яненко" />
+              <source srcset="
+                                  ../img/team1_mob@1x.jpg 450w,
+                                  ../img/team1_mob@2x.jpg 900w
+                                 " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+              <img src="../img/team1_mob@1x.jpg" alt="Product Designer" />
+            </picture>
+
+
             <div class="team__content">
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p lang="en" class="team__position">Product Designer</p>
@@ -240,9 +259,25 @@
               </ul>
             </div>
           </li>
-          <li class="team__item">
 
-            <img src="./img/photo2.jpg" width="270" alt="Ольга Рєпіна" />
+          <li class="team__item">
+            <picture>
+              <source srcset="
+                                            ../img/team2_lap@1x.jpg 270w,
+                                            ../img/team2_lap@2x.jpg 540w," media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 270px" />
+              <source srcset="
+                                                ../img/team2_tab@1x.jpg 354w,
+                                                ../img/team2_tab@2x.jpg 708w
+                                              " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
+
+              <source srcset="
+                                              ../img/team2_mob@1x.jpg 450w,
+                                              ../img/team2_mob@2x.jpg 900w
+                                             " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+              <img src="../img/team2_mob@1x.jpg" alt="Frontend Developer" />
+            </picture>
+
             <div class="team__content">
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p lang="en" class="team__position">Frontend Developer</p>
@@ -269,15 +304,27 @@
                 </li>
               </ul>
             </div>
-
           </li>
           <li class="team__item">
+            <picture>
+              <source srcset="
+                                            ../img/team3_lap@1x.jpg 270w,
+                                            ../img/team3_lap@2x.jpg 540w," media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 270px" />
+              <source srcset="
+                                                ../img/team3_tab@1x.jpg 354w,
+                                                ../img/team3_tab@2x.jpg 708w
+                                              " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
 
-            <img src="./img/photo3.jpg" width="270" alt="Микола Тарасов" />
+              <source srcset="
+                                              ../img/team3_mob@1x.jpg 450w,
+                                              ../img/team3_mob@2x.jpg 900w
+                                             " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+              <img src="../img/team3_mob@1x.jpg" alt="Marketing" />
+            </picture>
             <div class="team__content">
               <h3 class="team__name">Микола Тарасов</h3>
               <p lang="en" class="team__position">Marketing</p>
-
               <ul class="list team__social-list">
                 <li class="team__social-item">
                   <a href="" class="team__icon link"><svg width="20" height="20">
@@ -301,11 +348,25 @@
                 </li>
               </ul>
             </div>
-
           </li>
           <li class="team__item">
+            <picture>
+              <source srcset="
+                                            ../img/team4_lap@1x.jpg 270w,
+                                            ../img/team4_lap@2x.jpg 540w," media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 270px" />
+              <source srcset="
+                                                ../img/team4_tab@1x.jpg 354w,
+                                                ../img/team4_tab@2x.jpg 708w
+                                              " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
 
-            <img src="./img/photo4.jpg" width="270" alt="Михайло Єрмаков" />
+              <source srcset="
+                                              ../img/team4_mob@1x.jpg 450w,
+                                              ../img/team4_mob@2x.jpg 900w
+                                             " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+              <img src="../img/team3_mob@1x.jpg" alt="UI Designer" />
+            </picture>
+
             <div class="team__content">
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p lang="en" class="team__position">UI Designer</p>
@@ -332,7 +393,6 @@
                 </li>
               </ul>
             </div>
-
           </li>
         </ul>
       </div>
@@ -494,7 +554,8 @@
       </button>
     </div>
   </div>
-  <script src="./modal.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>
