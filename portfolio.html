@@ -18,21 +18,23 @@
 <body class="body">
   <!--Header-->
   <header class="page-header">
-    <div class=" container nav ">
+    <div class="container nav">
       <nav class="navigation">
         <a href="./index.html" class="logo page-header__logo" lang="en"><span
             class="page-header__logo-blue">Web</span>Studio</a>
+
         <ul class="navigation__list list">
           <li class="navigation__item">
-            <a href="./index.html" class="link navigation__link">Студія</a>
-          </li>
-          <li class="navigation__item">
             <div class="navigation__thumb">
-              <a href="./portfolio.html" class="link navigation__link--current"><span
-                  class="header__line">Портфоліо</span></a>
+              <a class="link navigation__link" href="./index.html"><span class="header__line">Студія</span></a>
             </div>
           </li>
           <li class="navigation__item">
+
+            <a href="./portfolio.html" class="link navigation__link--current">Портфоліо</a>
+          </li>
+          <li class="navigation__item">
+
             <a href="#" class="link navigation__link">Контакти</a>
           </li>
         </ul>
@@ -51,10 +53,62 @@
             </svg>+380961111111</a>
         </li>
       </ul>
+
+      <!-- mobile menu -->
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="переключатель мобільного меню">
+          <use class="mobile-menu" href="./img/icons.svg#icon-burger"></use>
+          <use class="mobile-close" href="./img/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg width="40" height="40" aria-label="переключатель мобільного меню">
+            <use class="mobile-menu" href="./img/icons.svg#icon-burger"></use>
+            <use class="mobile-close" href="./img/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="mobile-navigation__list list">
+          <li class="mobile-navigation__item">
+            <a href="./index.html" class="mobile-navigation__link">Студія</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a href="./portfolio.html" class="mobile-navigation__link mobile-navigation__link--active">Портфоліо</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a href="./contacts" class="mobile-navigation__link">Контакти</a>
+          </li>
+        </ul>
+        <div class="mobile-menu-box">
+          <ul class="mobile-contact__list list">
+            <li class="contact__item">
+              <a href="tel:+380961111111" class="mobile-contact__link mobile-contact__link--accent">
+                +38 096 111 11 11</a>
+            </li>
+            <li class="contact__item">
+              <a href="mailto:info@devstudio.com" class="mobile-contact__link">
+                info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="list mobile-social__list">
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link"> Instagram </a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link"> Twitter </a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link"> Facebook </a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link"> LinkedIn </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
   <main>
-
     <!--Filters-->
     <section class="section section-filters">
       <div class="container filters-container">
@@ -80,7 +134,22 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="project__thumb">
-                <img src="./img/folio1.jpg" width="370" height="295" alt="фото трьох розробників" />
+                <picture>
+                  <source srcset="
+                                        ./img/project1_lap@1x.jpg 370w,
+                                        ./img/project1_lap@2x.jpg 740w
+                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px" />
+                  <source srcset="
+                                        ./img/project1_tab@1x.jpg 354w,
+                                        ./img/project1_tab@2x.jpg 708w
+                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
+                  <source srcset="
+                                        ./img/project1_mob@1x.jpg 450w,
+                                        ./img/project1_mob@2x.jpg 900w
+                                      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+                  <img src="./img/project1_mob@1x.jpg" alt="project" />
+                </picture>
+                <!-- <img src="./img/folio1.jpg" width="370" height="295" alt="фото трьох розробників" /> -->
                 <div class="project__overlay">
                   <p class="project__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -99,7 +168,22 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="project__thumb">
-                <img src="./img/folio2.jpg" width="370" height="295" alt="постер" />
+                <picture>
+                  <source srcset="
+                                        ./img/project2_lap@1x.jpg 370w,
+                                        ./img/project2_lap@2x.jpg 740w
+                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px" />
+                  <source srcset="
+                                        ./img/project2_tab@1x.jpg 354w,
+                                        ./img/project2_tab@2x.jpg 708w
+                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
+                  <source srcset="
+                                        ./img/project2_mob@1x.jpg 450w,
+                                        ./img/project2_mob@2x.jpg 900w
+                                      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+                  <img src="./img/project2_mob@1x.jpg" alt="project" />
+                </picture>
+                <!-- <img src="./img/folio2.jpg" width="370" height="295" alt="постер" /> -->
                 <div class="project__overlay">
                   <p class="project__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -118,7 +202,22 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="project__thumb">
-                <img src="./img/folio3.jpg" width="370" height="295" alt="Ресторан Seafood" />
+                <picture>
+                  <source srcset="
+                                        ./img/project3_lap@1x.jpg 370w,
+                                        ./img/project3_lap@2x.jpg 740w
+                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px" />
+                  <source srcset="
+                                        ./img/project3_tab@1x.jpg 354w,
+                                        ./img/project3_tab@2x.jpg 708w
+                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
+                  <source srcset="
+                                        ./img/project3_mob@1x.jpg 450w,
+                                        ./img/project3_mob@2x.jpg 900w
+                                      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+                  <img src="./img/project3_mob@1x.jpg" alt="project" />
+                </picture>
+                <!-- <img src="./img/folio3.jpg" width="370" height="295" alt="Ресторан Seafood" /> -->
                 <div class="project__overlay">
                   <p class="project__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -137,7 +236,22 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="project__thumb">
-                <img src="./img/folio4.jpg" width="370" height="295" alt="чорні навушники" />
+                <picture>
+                  <source srcset="
+                                        ./img/project4_lap@1x.jpg 370w,
+                                        ./img/project4_lap@2x.jpg 740w
+                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px" />
+                  <source srcset="
+                                        ./img/project4_tab@1x.jpg 354w,
+                                        ./img/project4_tab@2x.jpg 708w
+                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
+                  <source srcset="
+                                        ./img/project4_mob@1x.jpg 450w,
+                                        ./img/project4_mob@2x.jpg 900w
+                                      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+                  <img src="./img/project4_mob@1x.jpg" alt="project" />
+                </picture>
+                <!-- <img src="./img/folio4.jpg" width="370" height="295" alt="чорні навушники" /> -->
                 <div class="project__overlay">
                   <p class="project__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -156,7 +270,22 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="project__thumb">
-                <img src="./img/folio5.jpg" width="370" height="295" alt="дві паперові корбки" />
+                <picture>
+                  <source srcset="
+                                        ./img/project5_lap@1x.jpg 370w,
+                                        ./img/project5_lap@2x.jpg 740w
+                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px" />
+                  <source srcset="
+                                        ./img/project5_tab@1x.jpg 354w,
+                                        ./img/project5_tab@2x.jpg 708w
+                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
+                  <source srcset="
+                                        ./img/project5_mob@1x.jpg 450w,
+                                        ./img/project5_mob@2x.jpg 900w
+                                      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+                  <img src="./img/project5_mob@1x.jpg" alt="project" />
+                </picture>
+                <!-- <img src="./img/folio5.jpg" width="370" height="295" alt="дві паперові корбки" /> -->
                 <div class="project__overlay">
                   <p class="project__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -175,7 +304,22 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="project__thumb">
-                <img src="./img/folio6.jpg" width="370" height="295" alt="монітор компютера" />
+                <picture>
+                  <source srcset="
+                                        ./img/project6_lap@1x.jpg 370w,
+                                        ./img/project6_lap@2x.jpg 740w
+                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px" />
+                  <source srcset="
+                                        ./img/project6_tab@1x.jpg 354w,
+                                        ./img/project6_tab@2x.jpg 708w
+                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
+                  <source srcset="
+                                        ./img/project6_mob@1x.jpg 450w,
+                                        ./img/project6_mob@2x.jpg 900w
+                                      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+                  <img src="./img/project6_mob@1x.jpg" alt="project" />
+                </picture>
+                <!-- <img src="./img/folio6.jpg" width="370" height="295" alt="монітор компютера" /> -->
                 <div class="project__overlay">
                   <p class="project__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -194,7 +338,22 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="project__thumb">
-                <img src="./img/folio7.jpg" width="370" height="295" alt="фото видання Limited Edition" />
+                <picture>
+                  <source srcset="
+                                                  ./img/project7_lap@1x.jpg 370w,
+                                                  ./img/project7_lap@2x.jpg 740w
+                                                " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px" />
+                  <source srcset="
+                                                  ./img/project7_tab@1x.jpg 354w,
+                                                  ./img/project7_tab@2x.jpg 708w
+                                                " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
+                  <source srcset="
+                                                  ./img/project7_mob@1x.jpg 450w,
+                                                  ./img/project7_mob@2x.jpg 900w
+                                                " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+                  <img src="./img/project7_mob@1x.jpg" alt="project" />
+                </picture>
+                <!-- <img src="./img/folio7.jpg" width="370" height="295" alt="фото видання Limited Edition" /> -->
                 <div class="project__overlay">
                   <p class="project__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -213,7 +372,22 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="project__thumb">
-                <img src="./img/folio8.jpg" width="370" height="295" alt="паперова етикетка" />
+                <picture>
+                  <source srcset="
+                                        ./img/project8_lap@1x.jpg 370w,
+                                        ./img/project8_lap@2x.jpg 740w
+                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px" />
+                  <source srcset="
+                                        ./img/project8_tab@1x.jpg 354w,
+                                        ./img/project8_tab@2x.jpg 708w
+                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
+                  <source srcset="
+                                        ./img/project8_mob@1x.jpg 450w,
+                                        ./img/project8_mob@2x.jpg 900w
+                                      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+                  <img src="./img/project8_mob@1x.jpg" alt="project" />
+                </picture>
+                <!-- <img src="./img/folio8.jpg" width="370" height="295" alt="паперова етикетка" /> -->
                 <div class="project__overlay">
                   <p class="project__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -232,7 +406,22 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="project__thumb">
-                <img src="./img/folio9.jpg" width="370" height="295" alt="додаток на ноутбуці" />
+                <picture>
+                  <source srcset="
+                                        ./img/project9_lap@1x.jpg 370w,
+                                        ./img/project9_lap@2x.jpg 740w
+                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px" />
+                  <source srcset="
+                                        ./img/project9_tab@1x.jpg 354w,
+                                        ./img/project9_tab@2x.jpg 708w
+                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 354px" />
+                  <source srcset="
+                                        ./img/project9_mob@1x.jpg 450w,
+                                        ./img/project9_mob@2x.jpg 900w
+                                      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
+                  <img src="./img/project9_mob@1x.jpg" alt="project" />
+                </picture>
+                <!-- <img src="./img/folio9.jpg" width="370" height="295" alt="додаток на ноутбуці" /> -->
                 <div class="project__overlay">
                   <p class="project__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем

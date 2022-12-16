@@ -1,11 +1,25 @@
 .filters {
-    list-style: none;
+    // list-style: none;
     display: flex;
-    justify-content: center;
-    padding-left: 0px;
+    // justify-content: center;
+    // padding-left: 0px;
     margin-bottom: 50px;
-     margin-top: 0px;
+    //  margin-top: 0px;
     gap: 8px;
+}
+@media screen and (max-width: 767px) {
+    .filters {
+        flex-wrap: wrap;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .filters {
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding-right: 0;
+    }
 }
 
 .filters__button {
