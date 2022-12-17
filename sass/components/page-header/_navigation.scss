@@ -39,6 +39,7 @@
 
 
 .navigation__link--current {
+    position: relative;
     color: $accent-color;
 
 }
@@ -50,11 +51,6 @@
   height: 4px;
   left: 0;
   bottom: -33px;
-  background-color: #188ce8;
+  background-color: $secondary-accent;
   border-radius: 2px;
-}
-
-
-.navigation__thumb {
-    position: relative;
 }

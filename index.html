@@ -25,13 +25,11 @@
 
         <ul class="navigation__list list">
           <li class="navigation__item">
-            <div class="navigation__thumb">
-              <a class="link navigation__link--current" href="./index.html">Студія</a>
-            </div>
+            <a class="link navigation__link--current" href="./index.html"><span class="header__line">Студія</span></a>
           </li>
           <li class="navigation__item">
 
-            <a href="./portfolio.html" class="link navigation__link"><span class="header__line">Портфоліо</span></a>
+            <a href="./portfolio.html" class="link navigation__link">Портфоліо</a>
           </li>
           <li class="navigation__item">
 
@@ -216,8 +214,8 @@
             <picture>
               <source srcset="
                                 ./img/team1_lap@1x.jpg 270w,
-                                ./img/team1_lap@2x.jpg 540w," media="(min-width: 1200px)"
-                sizes="(min-width: 1200px) 270px" />
+                                ./img/team1_lap@2x.jpg 540w
+                                " media="(min-width: 1200px)" sizes="(min-width: 1200px) 270px" />
               <source srcset="
                                     ./img/team1_tab@1x.jpg 354w,
                                     ./img/team1_tab@2x.jpg 708w
@@ -227,7 +225,7 @@
                                   ./img/team1_mob@1x.jpg 450w,
                                   ./img/team1_mob@2x.jpg 900w
                                  " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
-              <img src="../img/team1_mob@1x.jpg" alt="Product Designer" />
+              <img src="./img/team1_mob@1x.jpg" alt="Product Designer" />
             </picture>
 
 
@@ -263,8 +261,8 @@
             <picture>
               <source srcset="
                                             ./img/team2_lap@1x.jpg 270w,
-                                            ./img/team2_lap@2x.jpg 540w," media="(min-width: 1200px)"
-                sizes="(min-width: 1200px) 270px" />
+                                            ./img/team2_lap@2x.jpg 540w
+                                            " media="(min-width: 1200px)" sizes="(min-width: 1200px) 270px" />
               <source srcset="
                                                 ./img/team2_tab@1x.jpg 354w,
                                                 ./img/team2_tab@2x.jpg 708w
@@ -274,7 +272,7 @@
                                               ./img/team2_mob@1x.jpg 450w,
                                               ./img/team2_mob@2x.jpg 900w
                                              " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
-              <img src="../img/team2_mob@1x.jpg" alt="Frontend Developer" />
+              <img src="./img/team2_mob@1x.jpg" alt="Frontend Developer" />
             </picture>
 
             <div class="team__content">
@@ -308,8 +306,8 @@
             <picture>
               <source srcset="
                                             ./img/team3_lap@1x.jpg 270w,
-                                            ./img/team3_lap@2x.jpg 540w," media="(min-width: 1200px)"
-                sizes="(min-width: 1200px) 270px" />
+                                            ./img/team3_lap@2x.jpg 540w
+                                            " media="(min-width: 1200px)" sizes="(min-width: 1200px) 270px" />
               <source srcset="
                                                 ./img/team3_tab@1x.jpg 354w,
                                                 ./img/team3_tab@2x.jpg 708w
@@ -319,7 +317,7 @@
                                               ./img/team3_mob@1x.jpg 450w,
                                               ./img/team3_mob@2x.jpg 900w
                                              " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
-              <img src="../img/team3_mob@1x.jpg" alt="Marketing" />
+              <img src="./img/team3_mob@1x.jpg" alt="Marketing" />
             </picture>
             <div class="team__content">
               <h3 class="team__name">Микола Тарасов</h3>
@@ -352,7 +350,7 @@
             <picture>
               <source srcset="
                                             ./img/team4_lap@1x.jpg 270w,
-                                            ./img/team4_lap@2x.jpg 540w," media="(min-width: 1200px)"
+                                            ./img/team4_lap@2x.jpg 540w" media="(min-width: 1200px)"
                 sizes="(min-width: 1200px) 270px" />
               <source srcset="
                                                 ./img/team4_tab@1x.jpg 354w,
@@ -363,7 +361,7 @@
                                               ./img/team4_mob@1x.jpg 450w,
                                               ./img/team4_mob@2x.jpg 900w
                                              " media="(max-width: 767px)" sizes="(max-width: 767px) 450px" />
-              <img src="../img/team3_mob@1x.jpg" alt="UI Designer" />
+              <img src="./img/team3_mob@1x.jpg" alt="UI Designer" />
             </picture>
 
             <div class="team__content">
@@ -484,7 +482,7 @@
         </ul>
       </div>
       <div class="subscribe">
-        <form action="">
+        <form action="#">
           <label for="user-mail" class="subscribe__label">Підпишіться на розсилку</label>
           <div class="subscribe__form">
             <input class="subscribe__input" type="email" name="user-mail" id="user-mail" placeholder="E-mail"
@@ -528,7 +526,7 @@
         </div>
         <div class="form__field">
           <label for="feedback" class="form__label">Коментар </label>
-          <textarea name="feedback" id="feedback" resize="none" class="modal-feedback" placeholder="Введіть текст">
+          <textarea name="feedback" id="feedback" class="modal-feedback" placeholder="Введіть текст">
             </textarea>
         </div>
 

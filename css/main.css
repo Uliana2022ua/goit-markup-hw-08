@@ -291,6 +291,7 @@ ul {
 }
 
 .navigation__link--current {
+  position: relative;
   color: #2196f3;
 }
 
@@ -303,10 +304,6 @@ ul {
   bottom: -33px;
   background-color: #188ce8;
   border-radius: 2px;
-}
-
-.navigation__thumb {
-  position: relative;
 }
 
 .contact__list {
@@ -1489,7 +1486,6 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 214px;
   }
 }
 .subscribe__icon {
