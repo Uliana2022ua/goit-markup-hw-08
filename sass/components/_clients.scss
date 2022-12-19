@@ -17,6 +17,8 @@
     margin-bottom: 50px;
 }
 
+
+
 @media screen and (max-width: 479px) {
     .clients__icons {
         display: flex;
@@ -25,7 +27,13 @@
         margin-top: 30px;
     }
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 479px) {
+    .clients__item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}
+
+@media screen and (min-width: 480px) {
     .clients__icons {
         display: flex;
         flex-wrap: wrap;
@@ -33,6 +41,7 @@
         margin-top: 30px;
     }
 }
+
 @media screen and (min-width: 1200px) {
     .clients__icons {
         margin-top: 50px;
