@@ -4,6 +4,7 @@
     margin-bottom: 60px;
     text-align: center;
 }
+
 @media screen and (min-width: 1200px) {
     .address {
         text-align: start;
@@ -41,6 +42,7 @@
     color: $third-color;}
 
 .adress__contact {
+    text-decoration: none;
     font-style: normal;
     font-size: 14px;
     line-height: calc(24 / 14);

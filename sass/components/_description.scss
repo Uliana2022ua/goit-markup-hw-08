@@ -75,7 +75,8 @@
 @media screen and (max-width: 767px) {
     .description__icon {
         max-width: 450px;
-        max-height: 120px;
+        height: 120px;
+       
     }
 }
 
@@ -83,7 +84,7 @@
     .description__icon {
         width: 354px;
         height: 120px;
-        margin: 0 auto;
+        margin-bottom: 30px;
     }
 }
 
