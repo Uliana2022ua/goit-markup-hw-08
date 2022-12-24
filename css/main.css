@@ -194,6 +194,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -211,11 +213,11 @@ ul {
     display: block;
     text-decoration: none;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 12px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: #757575;
-    margin-bottom: 32px;
+    margin-bottom: 10px;
   }
 }
 .mobile-contact__link {
@@ -233,9 +235,7 @@ ul {
 }
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   border-width: 0 0 1px 0;
 }
 
@@ -267,11 +267,28 @@ ul {
 }
 
 .nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .nav {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,6 +321,7 @@ ul {
 .navigation__link--current {
   position: relative;
   color: #2196f3;
+  padding: 31px 0;
 }
 
 .header__line::after {
@@ -312,7 +330,7 @@ ul {
   width: 100%;
   height: 4px;
   left: 0;
-  bottom: -33px;
+  bottom: 0;
   background-color: #188ce8;
   border-radius: 2px;
 }
@@ -364,7 +382,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.7;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
@@ -382,7 +400,6 @@ ul {
 }
 
 .hero {
-  padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
   background: #2f303a;
