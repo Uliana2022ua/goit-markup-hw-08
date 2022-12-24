@@ -521,12 +521,16 @@ ul {
   .modal {
     width: 450px;
     height: 609px;
+    max-height: 90vh;
+    overflow-y: scroll;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    height: 581px;
     width: 528px;
+    height: 581px;
+    max-height: 90vh;
+    overflow-y: scroll;
   }
 }
 .modal__close-button {
