@@ -1,16 +1,27 @@
 .address {
     font-style: normal;
-    gap: 9px;
-    margin-bottom: 60px;
     text-align: center;
 }
+ 
 
+.address__item {
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+}
 @media screen and (min-width: 1200px) {
     .address {
         text-align: start;
-        margin-bottom: 0px;
+
     }
 }
+@media screen and (max-width: 767px) {
+    .address__list {
+        margin-bottom: 60px;
+
+    }
+}
+
 @media screen and (min-width: 768px) {
             .foot__address {
                 margin-right: auto;

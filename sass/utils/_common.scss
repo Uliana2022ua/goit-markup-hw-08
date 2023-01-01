@@ -33,7 +33,9 @@ img {
     color: $main-color;
 }
 
-.section {
+@media screen and (min-width: 1200px) {
+    .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
 }

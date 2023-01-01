@@ -1,15 +1,14 @@
+
 .menu-toggle {
-    display: inline-flex;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
+display: inline-flex;
+// position: absolute;
+justify-content: flex-end;
+background-color: transparent;
+cursor: pointer;
+border: none;
     
 }
+
 
 @media (min-width: 768px) {
     .menu-toggle {
@@ -17,6 +16,10 @@
     }
 }
 
+.mobile-close {
+    margin-top: 21px;
+    margin-right: 25px;
+}
 
 .mobile-close {
     display: none;
@@ -33,9 +36,12 @@
 }
 
 .js-close-menu .mobile-close {
-    display: block;
-
-   
+    display: block;  
+}
+.js-close-menu {
+    padding: 0px;
+    margin-top: 21px;
+    margin-right: 25px;
 }
 
 .js-close-menu .mobile-menu {
@@ -46,12 +52,12 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 40px 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
     background-color: $third-color;
     z-index: 999;
     transform: translateY(-100%);
@@ -62,6 +68,7 @@
     transform: translateY(0);
 }
 
+
 .mobile-navigation__link {
     text-decoration: none;
     font-weight: 500;
@@ -69,15 +76,22 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: #212121;
-    margin-bottom: 35px;
 }
 .mobile-navigation__link--active {
+    margin-top: 48px;
     color: $accent-color;
 }
+
+
+
 .mobile-navigation__item {
     text-decoration: none;
-margin-bottom: 35px;
+    margin-bottom: 32px;
 }
+.mobile-navigation__list {
+    margin-bottom: 274px;
+}
+
 
 .mobile-social__link {
     text-decoration: none;
@@ -92,10 +106,9 @@ margin-bottom: 35px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
     margin-top: 64px;
+    
 }
-
 
 
 .mobile-social__item:not(:last-of-type) {
@@ -104,29 +117,29 @@ margin-bottom: 35px;
 }
 
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
     .contact__item {
         display: block;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 1.1;
-            letter-spacing: 0.02em;
-            color: $second-color;
-            margin-bottom: 10px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        color: $second-color;
+        margin-bottom: 32px;
     }
 }
 .mobile-contact__link {
     font-size: 24px;
     color: $second-color;
-    margin-bottom: 32px;
+    margin-top: 32px;
     text-decoration: none;
 }
 
 .mobile-contact__link--accent {
-    font-size: 24px;
+    font-size: 34px;
     color: $accent-color;
-    margin-bottom: 32px;
     text-decoration: none;
+    margin-bottom: 32px;
 }
  

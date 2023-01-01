@@ -1,13 +1,18 @@
 .hero {
-    padding-bottom: 118px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background: #2f303a;
     background-size: cover;
     background-position: center;
 
 }
-.hero__container {
-    display: block;
+@media screen and (max-width: 1199px) {
+    .hero {
+        padding-top: 118px;
+        padding-bottom: 118px;
+
+}
 }
 @media screen and (max-width: 767px) {
     .hero { 
@@ -55,11 +60,16 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     margin: 0;
     font-weight: 900;
     font-size: 44px;
-    line-height: (calc 60 / 44);
+    line-height: 1.6;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $third-color;
 }
 
+@media screen and (max-width: 1199px) {
+    .hero__title {
+        font-size: 26px;
 
+    }
+}
