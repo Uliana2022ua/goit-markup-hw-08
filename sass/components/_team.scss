@@ -2,13 +2,7 @@
     background: #f5f4fa;
     flex-direction: column;
 }
-//  .team__list {
-//     display: flex;
-//     justify-content: center;
-//     gap: 30px;
-//     margin: 0;
-//    padding: 0;
-// }
+
 
 @media screen and (max-width: 1199px) {
     .team {
@@ -46,22 +40,31 @@
     }
 }
 
-.team__title {
-    margin: 0;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    color: $main-color;
-}
 @media screen and (max-width: 1200px) {
     .team__title {
-        margin-bottom: 30px;
-        font-size: 28px;
-        
+            margin: 0;
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 1.2;
+            text-align: center;
+            color: $main-color;
+       
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .team__title {
+            margin: 0;
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.2;
+            text-align: center;
+            color: $main-color;
+    }
+}
+
 .team__name {
     color: $main-color;
     line-height: 1.2;

@@ -1061,20 +1061,26 @@ textarea {
     list-style: none;
   }
 }
-.team__title {
-  margin: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  color: #212121;
-}
-
 @media screen and (max-width: 1200px) {
   .team__title {
+    margin: 0;
     margin-bottom: 30px;
+    font-weight: 700;
     font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    color: #212121;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: #212121;
   }
 }
 .team__name {
@@ -1175,10 +1181,6 @@ textarea {
   color: #757575;
 }
 
-.clients__title {
-  margin-bottom: 50px;
-}
-
 @media screen and (max-width: 1199px) {
   .clients {
     padding-top: 60px;
@@ -1191,10 +1193,16 @@ textarea {
     padding-bottom: 94px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
   .clients__title {
     margin-bottom: 30px;
     font-size: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 @media screen and (max-width: 479px) {
