@@ -1,14 +1,4 @@
-// .subscribe {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: baseline;
-//     margin-left: 70px;
-// }
 
-// .subscribe__form {
-//     display: flex;
-//     align-items: center;
-// }
 @media screen and (min-width: 768px) {
     .subscribe {
         display: flex;
@@ -51,9 +41,6 @@
     }
 }
 .subscribe__label {
-    // display: inline-block;
-    // margin-bottom: 20px;
-    // text-align: start;
     font-weight: 700;
     line-height: 1.1;
     text-transform: uppercase;

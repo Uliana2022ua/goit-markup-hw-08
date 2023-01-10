@@ -1,9 +1,6 @@
 
 .menu-toggle {
 display: inline-flex;
-position: absolute;
-top: 20px;
-right: 15px;
 margin: 0;
 padding: 0;
 background-color: transparent;
@@ -36,6 +33,11 @@ border: none;
 .js-close-menu .mobile-close {
     display: block;  
 }
+.js-close-menu {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+}
 
 
 .js-close-menu .mobile-menu {
@@ -51,7 +53,9 @@ border: none;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 48px 40px;
+    padding-left: 40px;
+    padding-bottom: 48px;
+    padding-top: 48px;
     background-color: $third-color;
     z-index: 999;
     transform: translateY(-100%);

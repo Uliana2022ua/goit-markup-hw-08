@@ -94,9 +94,6 @@ ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: absolute;
-  top: 20px;
-  right: 15px;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -127,6 +124,12 @@ ul {
   display: block;
 }
 
+.js-close-menu {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+}
+
 .js-close-menu .mobile-menu {
   display: none;
 }
@@ -147,7 +150,9 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  padding-top: 48px;
   background-color: #fff;
   z-index: 999;
   -webkit-transform: translateY(-100%);
